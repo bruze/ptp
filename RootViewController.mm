@@ -2,7 +2,7 @@
 #import "RootViewController.h"
 #include "models/PTModelGeneralSettings.h"
 #include "cocos2d.h"
-
+#import "PZPlayer-Swift.h"
 @implementation RootViewController
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -56,7 +56,11 @@
         [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
     }
 }
-
+- (void)showSettingsSA {
+    Settings *settings = [[[NSBundle mainBundle] loadNibNamed:@"Settings" owner:settings options:nil] objectAtIndex:0];//[[Settings alloc] init];
+    //UIView *xibView = [[[NSBundle mainBundle] loadNibNamed:@"Settings" owner:settings options:nil] objectAtIndex:0];
+    [[self view] addSubview: settings];
+}
 // Add this method
 - (BOOL)prefersStatusBarHidden {
     return YES;

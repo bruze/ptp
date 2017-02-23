@@ -72,6 +72,13 @@
 		9D4D8E701E5E28630018DD81 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4D8E6E1E5E28630018DD81 /* FirebaseAuth.framework */; };
 		9D4D8E711E5E28630018DD81 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4D8E6F1E5E28630018DD81 /* GTMSessionFetcher.framework */; };
 		9D4D8E731E5E2B430018DD81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D4D8E721E5E2B430018DD81 /* GoogleService-Info.plist */; };
+		9D51EDB31E5F605B00DD2607 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D51EDB21E5F605B00DD2607 /* Settings.xib */; };
+		9D51EDB51E5F606C00DD2607 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51EDB41E5F606C00DD2607 /* Settings.swift */; };
+		9D570CDD1E5F179600B66B51 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D570CDC1E5F179600B66B51 /* Manager.swift */; };
+		9D570CE01E5F187E00B66B51 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D570CDF1E5F187E00B66B51 /* Usuario.swift */; };
+		9D570CE31E5F191300B66B51 /* Any+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D570CE21E5F191300B66B51 /* Any+Conversion.swift */; };
+		9D570CE51E5F193400B66B51 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D570CE41E5F193400B66B51 /* Global.swift */; };
+		9D570CE71E5F319000B66B51 /* FIRDataSnapshot+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D570CE61E5F319000B66B51 /* FIRDataSnapshot+Ext.swift */; };
 		A171DC0E1DF7CCAE00161C57 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A171DC0D1DF7CCAD00161C57 /* GLKit.framework */; };
 		BF1373EF128A898400D9F789 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF492D4B1289302400A09262 /* OpenGLES.framework */; };
 		BF1373F1128A899E00D9F789 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF492B6912891AC600A09262 /* libz.dylib */; };
@@ -375,6 +382,14 @@
 		9D4D8E6E1E5E28630018DD81 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = "<group>"; };
 		9D4D8E6F1E5E28630018DD81 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = "<group>"; };
 		9D4D8E721E5E2B430018DD81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9D51EDB21E5F605B00DD2607 /* Settings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Settings.xib; path = View/Settings.xib; sourceTree = "<group>"; };
+		9D51EDB41E5F606C00DD2607 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = View/Settings.swift; sourceTree = "<group>"; };
+		9D570CDB1E5F179500B66B51 /* PZPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PZPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		9D570CDC1E5F179600B66B51 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Manager/Manager.swift; sourceTree = "<group>"; };
+		9D570CDF1E5F187E00B66B51 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		9D570CE21E5F191300B66B51 /* Any+Conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Any+Conversion.swift"; sourceTree = "<group>"; };
+		9D570CE41E5F193400B66B51 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		9D570CE61E5F319000B66B51 /* FIRDataSnapshot+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FIRDataSnapshot+Ext.swift"; sourceTree = "<group>"; };
 		A171DC0D1DF7CCAD00161C57 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		BF137426128A8E4600D9F789 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BF365AA612A103F70050DCF4 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
@@ -457,6 +472,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				9D570CDB1E5F179500B66B51 /* PZPlayer-Bridging-Header.h */,
 				9D4D8E721E5E2B430018DD81 /* GoogleService-Info.plist */,
 				BF5681CC1313A84D0055EEAC /* ios */,
 				49718B5C1596713D006F83BE /* Resources */,
@@ -1039,9 +1055,48 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		9D570CD91E5F177500B66B51 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9D570CDC1E5F179600B66B51 /* Manager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		9D570CDA1E5F177F00B66B51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D51EDB21E5F605B00DD2607 /* Settings.xib */,
+				9D51EDB41E5F606C00DD2607 /* Settings.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9D570CDE1E5F185B00B66B51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D570CDF1E5F187E00B66B51 /* Usuario.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9D570CE11E5F190100B66B51 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				9D570CE61E5F319000B66B51 /* FIRDataSnapshot+Ext.swift */,
+				9D570CE41E5F193400B66B51 /* Global.swift */,
+				9D570CE21E5F191300B66B51 /* Any+Conversion.swift */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
 		BF5681CC1313A84D0055EEAC /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				9D570CE11E5F190100B66B51 /* Tool */,
+				9D570CDE1E5F185B00B66B51 /* Model */,
+				9D570CDA1E5F177F00B66B51 /* View */,
+				9D570CD91E5F177500B66B51 /* Manager */,
 				491018DA18BD7B5D0046AA14 /* libs */,
 				D4ABB4B213B4395300552E6E /* main.m */,
 				BF365AA612A103F70050DCF4 /* AppController.h */,
@@ -1079,6 +1134,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0810;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						LastSwiftMigration = 0820;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ptplayer" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1106,6 +1166,7 @@
 			files = (
 				49718BBD1596730C006F83BE /* Icon.png in Resources */,
 				49718BBE15967314006F83BE /* Icon-114.png in Resources */,
+				9D51EDB31E5F605B00DD2607 /* Settings.xib in Resources */,
 				49FB02211A26788E001B0007 /* Default-736h@3x.png in Resources */,
 				03E533591C764C71006529F1 /* Default-667h-ios8@2x.png in Resources */,
 				49FB02221A26788E001B0007 /* Default-iPad@2x.png in Resources */,
@@ -1135,9 +1196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D570CE31E5F191300B66B51 /* Any+Conversion.swift in Sources */,
 				BF365AA812A103F70050DCF4 /* AppController.mm in Sources */,
 				BF4DE6AD138BB89600CF907D /* RootViewController.mm in Sources */,
+				9D570CE71E5F319000B66B51 /* FIRDataSnapshot+Ext.swift in Sources */,
 				D4ABB4B313B4395300552E6E /* main.m in Sources */,
+				9D570CE01E5F187E00B66B51 /* Usuario.swift in Sources */,
+				9D51EDB51E5F606C00DD2607 /* Settings.swift in Sources */,
+				9D570CDD1E5F179600B66B51 /* Manager.swift in Sources */,
+				9D570CE51E5F193400B66B51 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1150,6 +1217,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1186,6 +1254,7 @@
 				);
 				INFOPLIST_FILE = "PTPlayer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/libs/cocos2dx",
@@ -1210,6 +1279,9 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				STRIP_PNG_TEXT = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "PZPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv6 armv7 i386 arm64";
 			};
@@ -1221,6 +1293,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1255,6 +1328,7 @@
 				);
 				INFOPLIST_FILE = "PTPlayer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/libs/cocos2dx",
@@ -1280,6 +1354,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				STRIP_PNG_TEXT = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "PZPlayer-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "armv6 armv7 i386 arm64";

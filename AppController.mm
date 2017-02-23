@@ -13,6 +13,7 @@
 
 #import "models/PTModelController.h"
 #import "Firebase.h"
+#import "PZPlayer-Swift.h"
 
 @implementation AppController
 @synthesize viewController;
@@ -21,8 +22,6 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
-NSString *const FirebaseURL = @"https://tuserenata-dd913.firebaseio.com/";
-//FIRDatabaseReference *const FirebaseRef = [[FIRDatabase database] reference];
 // cocos2d application instance
 static PTPAppDelegate s_sharedApplication;
 
@@ -55,6 +54,13 @@ static PTPAppDelegate s_sharedApplication;
     viewController.wantsFullScreenLayout = YES;
     viewController.view = __glView;
  
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    [button setBackgroundColor:[UIColor blueColor]];
+    [[button titleLabel] setText: @"Settings"];
+    [[button titleLabel] setTextColor:[UIColor whiteColor]];
+    [button addTarget:viewController action:@selector(showSettingsSA) forControlEvents: UIControlEventTouchUpInside];
+    [[viewController view] addSubview:button];
+    
     if ( [[UIDevice currentDevice].systemVersion floatValue] < 6.0) {
         [window addSubview: viewController.view];
     }
@@ -80,11 +86,18 @@ static PTPAppDelegate s_sharedApplication;
 }
 
 -(void)tryLogin {
-    [[FIRAuth auth] signInWithEmail:@"dos@dos.com" password:@"123456" completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
-        if (user != nil) {
-            NSLog(@"%@", user.displayName);
-        }
-    }];
+    FIRUser *current = [[FIRAuth auth] currentUser];
+    if (current != nil) {
+        [[Manager sharedManager] obtenerUsuario: [current uid] finalizar:^(Usuario * _Nullable user) {
+            [[Manager sharedManager] setCurrentUser: user];
+        }];
+    } else {
+        [[FIRAuth auth] signInWithEmail:@"dos@dos.com" password:@"123456" completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
+            [[Manager sharedManager] obtenerUsuario: [user uid] finalizar:^(Usuario * _Nullable user) {
+                [[Manager sharedManager] setCurrentUser: user];
+            }];
+        }];
+    }
 }
 
 -(NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window

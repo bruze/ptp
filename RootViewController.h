@@ -28,5 +28,5 @@
 @interface RootViewController : UIViewController  {
     
 }
-
+-(void)showSettingsSA;
 @end
