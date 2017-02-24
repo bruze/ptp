@@ -56,8 +56,9 @@ static PTPAppDelegate s_sharedApplication;
  
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     [button setBackgroundColor:[UIColor blueColor]];
-    [[button titleLabel] setText: @"Settings"];
-    [[button titleLabel] setTextColor:[UIColor whiteColor]];
+    /*[[button titleLabel] setText: @"Settings"];
+    [[button titleLabel] setTextColor:[UIColor whiteColor]];*/
+    [button setImage:[[UIImage alloc] initWithContentsOfFile:@"qubodup-Cog-cogwheel-gear-Zahnrad-6"] forState:UIControlStateHighlighted];
     [button addTarget:viewController action:@selector(showSettingsSA) forControlEvents: UIControlEventTouchUpInside];
     [[viewController view] addSubview:button];
     

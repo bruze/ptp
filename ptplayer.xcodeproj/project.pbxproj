@@ -63,6 +63,7 @@
 		4B7BBD0717D1182A0082E774 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B7BBD0417D1182A0082E774 /* Icon-120.png */; };
 		4B7BBD0817D1182A0082E774 /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B7BBD0517D1182A0082E774 /* Icon-152.png */; };
 		4BA1F57C178C82F20059AF8B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49666488159BCC710063E785 /* CFNetwork.framework */; };
+		9D160E141E6077B600F33EF4 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D160E131E6077B600F33EF4 /* Media.xcassets */; };
 		9D4D8E651E5E24D70018DD81 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4D8E611E5E24D70018DD81 /* FirebaseAnalytics.framework */; };
 		9D4D8E661E5E24D70018DD81 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4D8E621E5E24D70018DD81 /* FirebaseCore.framework */; };
 		9D4D8E671E5E24D70018DD81 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4D8E631E5E24D70018DD81 /* FirebaseInstanceID.framework */; };
@@ -371,6 +372,7 @@
 		4B7BBD0317D1182A0082E774 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
 		4B7BBD0417D1182A0082E774 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
 		4B7BBD0517D1182A0082E774 /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
+		9D160E131E6077B600F33EF4 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = resources/New/Media.xcassets; sourceTree = "<group>"; };
 		9D4D8E5F1E5E24590018DD81 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = ../../Downloads/Firebase/Analytics/FirebaseCore.framework; sourceTree = "<group>"; };
 		9D4D8E611E5E24D70018DD81 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		9D4D8E621E5E24D70018DD81 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
@@ -472,6 +474,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				9D160E131E6077B600F33EF4 /* Media.xcassets */,
 				9D570CDB1E5F179500B66B51 /* PZPlayer-Bridging-Header.h */,
 				9D4D8E721E5E2B430018DD81 /* GoogleService-Info.plist */,
 				BF5681CC1313A84D0055EEAC /* ios */,
@@ -1175,6 +1178,7 @@
 				49718BC115967323006F83BE /* Icon-72.png in Resources */,
 				49718BC215967326006F83BE /* Icon-144.png in Resources */,
 				03E5335A1C764C71006529F1 /* Default-ios8@2x.png in Resources */,
+				9D160E141E6077B600F33EF4 /* Media.xcassets in Resources */,
 				495B007815F7D6DF00AC5A06 /* Default~ipad.png in Resources */,
 				4930D9741628B9EC00801B1C /* Default-568h@2x.png in Resources */,
 				03E533581C764C71006529F1 /* Default-568h-ios8@2x.png in Resources */,

@@ -57,9 +57,10 @@
     }
 }
 - (void)showSettingsSA {
-    Settings *settings = [[[NSBundle mainBundle] loadNibNamed:@"Settings" owner:settings options:nil] objectAtIndex:0];//[[Settings alloc] init];
-    //UIView *xibView = [[[NSBundle mainBundle] loadNibNamed:@"Settings" owner:settings options:nil] objectAtIndex:0];
-    [[self view] addSubview: settings];
+    Settings *settings = [[Settings alloc] init];
+    UIView *xibView = [[[NSBundle mainBundle] loadNibNamed:@"Settings" owner:settings options:nil] objectAtIndex:0];
+    [[self view] addSubview: xibView];
+    [[settings name] setText: [[[Manager sharedManager] currentUser] nombre]];
 }
 // Add this method
 - (BOOL)prefersStatusBarHidden {
